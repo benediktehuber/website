@@ -1,9 +1,9 @@
 body {
-  margin: 0;
-  font-family: "Garamond", serif;
-  color: #2d2d2d;
+    padding: 50px;
+    font-family: "Garamond", "EB Garamond", serif; /* Use local Garamond or fallback to EB Garamond */
+    color: #2d2d2d;
+    font-weight: 300;
 }
-
 .layout {
   display: flex;
 }
