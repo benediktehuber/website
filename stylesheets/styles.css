@@ -3,36 +3,21 @@ body {
   font-family: 'Garamond', serif;
   color: #2d2d2d;
   margin: 0;
-  padding: 20px;
+  padding: 0; /* Reset padding to prevent default spacing */
 }
 
-h1, h2, h3 {
-  color: #333;
-  margin-bottom: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: #0077cc;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Layout */
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+/* Fix for the fixed header */
 header {
-  width: 100%;
-  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   background-color: #f9f9f9;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -50,6 +35,14 @@ header .round-image {
 
 header .view {
   flex: 2;
+}
+
+/* Body content */
+.wrapper {
+  margin-top: 200px; /* Adjust this value according to your header height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Main Content Layout */
@@ -91,3 +84,4 @@ footer {
     margin-right: 0;
   }
 }
+
