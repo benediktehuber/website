@@ -109,9 +109,14 @@ th {
   color:#444;
 }
 
-img {
-  max-width:80%;
+.round-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #ddd;
 }
+
 
 header {
   width:450px;
