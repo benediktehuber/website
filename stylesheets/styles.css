@@ -68,9 +68,27 @@ a small {
 }
 
 .wrapper {
-  width:860px;
-  margin:0 auto;
+  display: flex; /* Use Flexbox for layout */
+  flex-direction: row; /* Align items horizontally */
+  gap: 20px; /* Add space between streams */
+  margin: 0 auto;
 }
+
+.content-container {
+  display: flex;
+  flex: 1;
+  max-width: 1200px; /* Optional: Limit max-width of the entire content */
+}
+
+.stream-one, .stream-two {
+  flex: 1; /* Make both streams equal in width */
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding doesn't add to the width */
+  background-color: #f9f9f9; /* Optional: Add background for distinction */
+  border: 1px solid #ddd; /* Optional: Add border for clarity */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
 
 blockquote {
   border-left:1px solid #e5e5e5;
