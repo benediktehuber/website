@@ -27,6 +27,33 @@ a:hover {
   align-items: center;
 }
 
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+header h1 {
+  margin-top: 0;
+  flex: 1;
+}
+
+header .round-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+header .view {
+  flex: 2;
+}
+
+/* Main Content Layout */
 .content-container {
   display: flex;
   gap: 20px;
@@ -36,14 +63,8 @@ a:hover {
   margin-top: 20px;
 }
 
-.left-column, .middle-column, .right-column {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
 .left-column {
-  flex: 1.5;
+  flex: 1;
 }
 
 .middle-column {
@@ -51,31 +72,12 @@ a:hover {
 }
 
 .right-column {
-  flex: 1.5;
+  flex: 1;
 }
 
 /* Styling for Sections */
 section {
   margin-bottom: 40px;
-}
-
-/* Header Styling */
-header {
-  width: 100%;
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-
-header h1 {
-  margin-top: 0;
-}
-
-.round-image {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border: 2px solid #ddd;
 }
 
 footer {
