@@ -110,11 +110,11 @@ th {
 }
 
 img {
-  max-width:100%;
+  max-width:80%;
 }
 
 header {
-  width:300px;
+  width:450px;
   float:left;
   position:fixed;
 }
