@@ -51,10 +51,11 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:blue;
+  color:blue !important;;
   font-weight:400;
   text-decoration:none;
 }
+
 
 a small {
   font-size:11px;
