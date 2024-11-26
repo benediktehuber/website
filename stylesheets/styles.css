@@ -47,3 +47,10 @@ body {
 .stream h2 {
   margin-top: 0;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;  /* Increased space between streams */
+  margin: 0 auto;
+}
