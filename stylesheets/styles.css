@@ -245,6 +245,11 @@ footer {
   bottom:50px;
 }
 
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column; /* Stack streams vertically */
+  }
+}
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
