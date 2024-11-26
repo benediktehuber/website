@@ -120,7 +120,9 @@ th {
 
 
 header {
-  width:450px;
+    background-color: #f0f0f0; /* Light grey */
+     padding: 20px;
+   width:450px;
   float:left;
   position:fixed;
 }
