@@ -186,6 +186,19 @@ header ul a strong {
   color:#222;
 }
 
+.right-box {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 20px;
+    width: 200px; /* Adjust width as needed */
+    float: right;
+    position: fixed;
+    right: 0; /* Align to the right */
+    top: 0; /* Align to the top */
+    border: 1px solid #ddd; /* Optional border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+
 section {
   width:500px;
   float:right;
