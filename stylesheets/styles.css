@@ -1,16 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-   padding: 50px;
-   font: 14px/1.5 "Times New Roman", serif; /* Changed font-family to Times New Roman */
-   color: #2d2d2d;
-   font-weight: 300;
+    padding: 50px;
+    font: 14px/1.5 "Garamond", serif;
+    color: #2d2d2d;
+    font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
-  margin:0 0 20px;
+    font-family: 'Lato', sans-serif;
+    color: #222;
+    margin: 0 0 20px;
+    font-weight: 700; /* Adjust based on the desired thickness */
 }
+
 
 p, ul, ol, table, pre, dl {
   margin:0 0 20px;
@@ -121,10 +124,11 @@ th {
 
 header {
     background-color: #f0f0f0; /* Light grey */
-     padding: 20px;
-   width:200px;
-  float:left;
-  position:fixed;
+    padding: 20px;
+    width: 260px; /* Adjust width as needed */
+    float: left;
+    position: fixed;
+    left: 50px; /* Move header farther to the right (adjust value as needed) */
 }
 
 header ul {
