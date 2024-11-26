@@ -13,6 +13,7 @@ header {
   background-color: #f9f9f9;
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: static; /* Ensure header is not fixed */
 }
 
 header h1 {
@@ -34,7 +35,7 @@ header .view {
 
 /* Content Container */
 .content-container {
-  margin-left: 220px; /* Give space for the header on the left */
+  margin-left: 220px; /* Space for the header */
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -42,13 +43,13 @@ header .view {
 
 /* Left Column (for "Welcome" and "Projects") */
 .left-column {
-  width: 25%; /* Adjust this to make the left column the size you want */
+  width: 25%; /* Adjust the size of the left column */
   padding-right: 20px;
 }
 
 /* Right Column (for "Podcast") */
 .right-column {
-  width: 70%; /* Adjust this to take the remaining space */
+  width: 70%; /* Adjust to take remaining space */
 }
 
 /* Styling for Sections */
@@ -74,7 +75,7 @@ footer {
   }
 
   header {
-    width: 100%; /* Full width header on mobile */
+    width: 100%; /* Full-width header on mobile */
     padding-bottom: 10px;
   }
 }
