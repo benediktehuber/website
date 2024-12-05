@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+<link href="https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700" rel="stylesheet">
 
 body {
   padding:50px;
@@ -213,6 +213,12 @@ footer {
     position:static;
     width:auto;
   }
+
+  header, footer {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
   
   header {
     padding-right:320px;
@@ -261,6 +267,12 @@ footer {
   
   header ul {
     display:none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header, section {
+    width: 100%;
   }
 }
 
