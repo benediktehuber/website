@@ -111,14 +111,26 @@
   font-family: 'Lato', sans-serif;
   font-weight: 300; /* Thin Lato font */
   font-size: 20px;
-  font-weight: bold;
   margin: 0;
+    text-align: left; /* Align headers to the left */
   width: 100%; /* Ensure header takes up full width of the column */
 }
 
 .column-content {
   padding: 20px;
+  margin-top: 20px; /* Increased margin for more space */
+
+  
 }
+
+     .column-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+.column-content ul li {
+  margin: 5px 0;
+}
+     
 
 /* Column content and layout */
 .column {
@@ -126,6 +138,14 @@
   position: relative;
 }
 
+     .column-content a {
+  text-decoration: none;
+  color: #333;
+}
+
+.column-content a:hover {
+  text-decoration: underline;
+}
 .column-header + .column-header {
   margin-top: 10px; /* Add space between headers if there are multiple */
 }
