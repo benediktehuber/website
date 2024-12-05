@@ -46,7 +46,8 @@
     }
 
        h1 {
-      font-family: 'Lato', sans-serif;
+        font-size: 36px; /* Adjust to match or be smaller than .column-header */
+font-family: 'Lato', sans-serif;
        text-align: left; /* Align text to the right */
         font-weight: 300; /* Optional: Adjust weight for a balanced appearance */
       margin: 10px 0; /* Optional: Adjust margin for spacing */
@@ -115,7 +116,7 @@
     .column-header {
       position: sticky;
       top: 50px;
-      padding: 10px;
+      padding: 5px;
       font-family: 'Lato', sans-serif;
       font-weight: 300;
       font-size: 18px;
@@ -123,9 +124,10 @@
       text-align: right; /* Align headers to the left */
     }
 
-    .column-content {
-      padding: 20px;
-    }
+   .column-content {
+  padding-top: 0; /* Remove extra space at the top of the content */
+  margin-top: 5px; /* Reduce spacing between the header and text */
+}
 
     .column-content ul {
       list-style-type: none;
