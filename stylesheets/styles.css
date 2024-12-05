@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h1 {
-  font-size: 32px;
+  font-size: 36px;
   color: #222;
 }
 
@@ -53,8 +53,8 @@ h3, h4, h5, h6 {
 }
 
 .column .smaller-heading {
-    font-size: 0.9em; /* Adjust the size as needed */
-    line-height: 1.2; /* Optional: Adjust line height for better spacing */
+    font-size: 12px !important; /* Force smaller size */
+    line-height: 1.2;          /* Optional: Adjust line height for readability */
 }
 
 
