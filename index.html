@@ -42,13 +42,13 @@
       color: #2d2d2d;
       line-height: 1.5;
       margin: 0;
-      padding: 50px;
+      padding: 0;
     }
 
-   h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300; /* Thinner Lato */
-}
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300; /* Thinner Lato */
+    }
 
     /* Header Styling */
     header {
@@ -60,103 +60,80 @@
       padding: 20px;
       background-color: #ffd9f8;
       text-align: center; /* Center the text content in the header */
-
+      z-index: 10; /* Ensure it stays on top */
     }
 
     header img {
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      
     }
 
     header .name {
       font-size: 30px;
       font-weight: bold;
       margin-top: 15px;
-       text-align: center; /* Ensure name is centered */
-
     }
 
     header .social-links {
       margin-top: 20px;
-      text-align: center; /* Center the social links */
-        gap: 15px; /* Space between icons */
-
-
+      text-align: center;
+      gap: 15px;
     }
 
     header .social-links a {
-      display: block;
-      margin: 5px 0;
+      display: inline-block;
+      margin: 5px;
       text-decoration: none;
       color: #333;
-        text-align: center; /* Ensure social media links are centered */
-
     }
 
     /* Content Layout */
-   .content {
-  margin-left: 280px; /* Space for the fixed header */
-  display: flex;
-  justify-content: space-between;
-  margin-top: 250px; /* Adjust this value based on the height of the header */
-}
+    .content {
+      margin-left: 250px; /* Space for the fixed header */
+      padding-top: 50px; /* Add top padding to prevent overlap */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
+    .column {
+      width: 45%; /* Adjust column width */
+      margin-bottom: 20px;
+    }
 
-/* Header Styling */
-.column-header {
-  position: sticky;
-  top: 50px;
-  padding: 10px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300; /* Thin Lato font */
-  font-size: 20px;
-  margin: 0;
-    text-align: right; /* Align headers to the left */
-  width: 100%; /* Ensure header takes up full width of the column */
-    margin-top: 30px; /* Increased margin for more space above headers */
+    .column-header {
+      position: sticky;
+      top: 50px;
+      padding: 10px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+      margin: 0;
+      text-align: left; /* Align headers to the left */
+    }
 
-}
+    .column-content {
+      padding: 20px;
+    }
 
-.column-content {
-  padding: 20px;
-  
-}
+    .column-content ul {
+      list-style-type: none;
+      padding: 0;
+    }
 
-     .column-content ul {
-  list-style-type: none;
-  padding: 0;
-}
-.column-content ul li {
-  margin: 5px 0;
-}
-     
+    .column-content ul li {
+      margin: 5px 0;
+    }
 
-/* Column content and layout */
-.column {
-  width: 40%; /* Two columns */
-  position: relative;
-    margin-bottom: 20px; /* Space between columns, optional */
+    .column-content a {
+      text-decoration: none;
+      color: #333;
+    }
 
-}
-
-     .column-content a {
-  text-decoration: none;
-  color: #333;
-}
-.columns-container {
-  display: flex; /* Make the columns use flexbox */
-  justify-content: space-between; /* Distribute columns evenly */
-  gap: 20px; /* Optional: adds space between the columns */
-  flex-wrap: wrap; /* Ensure the columns wrap on smaller screens */
-}
-.column-content a:hover {
-  text-decoration: underline;
-}
-.column-header + .column-header {
-  margin-top: 10px; /* Add space between headers if there are multiple */
-}
+    .column-content a:hover {
+      text-decoration: underline;
+    }
 
     /* Footer Styling */
     footer {
@@ -171,103 +148,95 @@
     /* Mobile Responsiveness */
     @media screen and (max-width: 960px) {
       .content {
-        flex-direction: column;
         margin-left: 0;
+        padding-top: 100px; /* Adjust top padding for mobile */
       }
 
       .column {
-        width: 100%;
+        width: 100%; /* Full width on mobile */
         margin-bottom: 20px;
+      }
+
+      header {
+        width: 100%;
+        position: relative;
+        height: auto;
       }
     }
   </style>
 </head>
 
-
-
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1> Benedikte Grundtvig Huber</h1>
-        <img src="img/IMG_3022.JPG" alt="Your Picture" class="round-image">
-        <p></p>
-        <p class="view"> Master student <br><a href="https://polsci.ku.dk/">Institut for Statskundskab</a><br> University of Copenhagen <br><a href="mailto:didigru@gmail.com">didigru@gmail.com</a></p>
-        <p></p>
-        <div>
-  <a href="https://x.com/BenedikteHuber1" target="_blank">
-    <i class="fab fa-twitter" style="font-size: 24px; margin-right: 10px;"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/benediktegrundtvighuber/" target="_blank">
-    <i class="fab fa-linkedin" style="font-size: 24px;"></i>
-  </a>
-    <a href="https://bsky.app/profile/benedikteghuber.bsky.social" target="_blank">
-  <i class="fas fa-user" style="font-size: 24px; margin-right: 10px;"></i>
-           </a>
-  <a href="https://github.com/benediktehuber" target="_blank">
-    <i class="fab fa-github" style="font-size: 24px;"></i>
-  </a>
-</div>
-         <p></p>
-        <p>
-          <a href="cv/cv_a_la_marc__til_github_.pdf"><b>Curriculum Vitae</b></a><br>
-        </p>
-      </header>
-
-  <!-- Content Section -->
-<div class="columns-container">
-  <div class="column">
-    <div class="column-header">Welcome</div>
-    <div class="column-content">
-      <p>Hello</p>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="column-header">CV</div>
-    <div class="column-content">
-      <p>Yes</p>
-    </div>
-  </div>
-</div>
-
-<div class="columns-container">
-  <div class="column">
-    <div class="column-header">Podcast</div> <!-- Header 1 for Podcast -->
-    <div class="column-content">
+<body>
+  <div class="wrapper">
+    <header>
+      <h1> Benedikte Grundtvig Huber</h1>
+      <img src="img/IMG_3022.JPG" alt="Your Picture" class="round-image">
+      <p class="view"> Master student <br><a href="https://polsci.ku.dk/">Institut for Statskundskab</a><br> University of Copenhagen <br><a href="mailto:didigru@gmail.com">didigru@gmail.com</a></p>
+      <div>
+        <a href="https://x.com/BenedikteHuber1" target="_blank">
+          <i class="fab fa-twitter" style="font-size: 24px; margin-right: 10px;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/benediktegrundtvighuber/" target="_blank">
+          <i class="fab fa-linkedin" style="font-size: 24px;"></i>
+        </a>
+        <a href="https://bsky.app/profile/benedikteghuber.bsky.social" target="_blank">
+          <i class="fas fa-user" style="font-size: 24px; margin-right: 10px;"></i>
+        </a>
+        <a href="https://github.com/benediktehuber" target="_blank">
+          <i class="fab fa-github" style="font-size: 24px;"></i>
+        </a>
+      </div>
       <p>
-        As a TA for Professor Jacob Hariri's course Comparative Politics III - 3rd year BSc course at the University of Copenhagen - I have been a guest on Marc Sabatier Hvidkjærs Podcast, which worked as a compendium to the course in Comparative Politics. I appear on the following episodes:
-        <ol start="1">
-          <li>
-            <a href="https://podcasts.apple.com/dk/podcast/%C3%B8konomisk-udvikling-demokrati/id1644873072?i=1000579321369"><b> Economic Development and Democracy</b></a><br>&nbsp;
-          </li>
-          <li>
-            <a href="https://podcasts.apple.com/dk/podcast/stater-imperier/id1644873072?i=1000579371705"><b>States and Empires</b></a><br>&nbsp;
-          </li>
-        </ol>
+        <a href="cv/cv_a_la_marc__til_github_.pdf"><b>Curriculum Vitae</b></a><br>
       </p>
-    </div>
-  </div>
+    </header>
 
-  <div class="column">
-    <div class="column-header">Articles</div> <!-- Header 2 for Articles -->
-    <div class="column-content">
-      <p>
-        <ol start="1">
-          <li>
-            <b> A tale of two aids </b>
-            (with Maria Lok), <i> Master Thesis of the Year 2024, Department of Political Science, University of Copenhagen </i>.
-            <a href="Thesis.pdf"><b> [Full Thesis]</b></a><br>&nbsp;
-          </li>
-          <li>
-            <b> A Billion Telegram Posts about the 2024 U.S. Presidential Election </b>
-            <i> As a side project, I am currently exploring the Blas et al (2024) dataset </i>.
-            <a href="Thesis.pdf"><b> [Preliminary findings]</b></a><br>&nbsp;
-          </li>
-        </ol>
-      </p>
+    <div class="content">
+      <div class="column">
+        <div class="column-header">Welcome</div>
+        <div class="column-content">
+          <p>Hello</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="column-header">CV</div>
+        <div class="column-content">
+          <p>Yes</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+
+    <div class="content">
+      <div class="column">
+        <div class="column-header">Podcast</div>
+        <div class="column-content">
+          <p>
+            As a TA for Professor Jacob Hariri's course Comparative Politics III - 3rd year BSc course at the University of Copenhagen - I have been a guest on Marc Sabatier Hvidkjærs Podcast, which worked as a compendium to the course in Comparative Politics. I appear on the following episodes:
+            <ol start="1">
+              <li><a href="https://podcasts.apple.com/dk/podcast/%C3%B8konomisk-udvikling-demokrati/id1644873072?i=1000579321369"><b> Economic Development and Democracy</b></a></li>
+              <li><a href="https://podcasts.apple.com/dk/podcast/stater-imperier/id1644873072?i=1000579371705"><b>States and Empires</b></a></li>
+            </ol>
+          </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="column-header">Articles</div>
+        <div class="column-content">
+          <ol start="1">
+            <li>
+              <b> A tale of two aids </b> (with Maria Lok), <i> Master Thesis of the Year 2024, Department of Political Science, University of Copenhagen </i>.
+              <a href="Thesis.pdf"><b> [Full Thesis]</b></a>
+            </li>
+            <li>
+              <b> A Billion Telegram Posts about the 2024 U.S. Presidential Election </b> <i> As a side project, I am currently exploring the Blas et al (2024) dataset </i>.
+              <a href="Thesis.pdf"><b> [Preliminary findings]</b></a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
      
 
       <footer>
