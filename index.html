@@ -100,11 +100,10 @@
       justify-content: space-between;
     }
 
-    .column {
-      width: 48%; /* Two columns */
-      position: relative;
-    }
-
+ CSS Adjustments:
+css
+Kopier kode
+/* Header Styling */
 .column-header {
   position: sticky;
   top: 50px;
@@ -112,26 +111,26 @@
   font-family: 'Lato', sans-serif;
   font-weight: 300; /* Thin Lato font */
   font-size: 20px;
+  font-weight: bold;
   margin: 0;
-  text-align: left; /* Left-align the headers */
+  text-align: right; /* Right align the header text */
+  width: 100%; /* Ensure header takes up full width of the column */
 }
 
-.column-sub-header {
-  position: sticky;
-  top: 50px;
-  padding: 10px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300; /* Thin Lato font */
-  font-size: 20px;
-  margin: 0;
-  padding-left: 0;
-  text-indent: 0;
-  text-align: left; /* Left-align the subheader */
+.column-content {
+  padding: 20px;
+  text-align: left; /* Left align the text inside the column */
 }
 
-    .column-content {
-      padding: 20px;
-    }
+/* Column content and layout */
+.column {
+  width: 48%; /* Two columns */
+  position: relative;
+}
+
+.column-header + .column-header {
+  margin-top: 10px; /* Add space between headers if there are multiple */
+}
 
     /* Footer Styling */
     footer {
