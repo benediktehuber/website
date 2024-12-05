@@ -31,6 +31,110 @@
       }
     }
   </script>
+
+   <style>
+    /* Internal CSS Styling */
+
+    /* Global Styling */
+    body {
+      font-family: 'EB Garamond', serif;
+      font-size: 16px;
+      color: #2d2d2d;
+      line-height: 1.5;
+      margin: 0;
+      padding: 50px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Lato', sans-serif;
+    }
+
+    /* Header Styling */
+    header {
+      position: fixed;
+      top: 50px;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      padding: 20px;
+      background-color: #f4f4f4;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    header .name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    header .social-links {
+      margin-top: 20px;
+    }
+
+    header .social-links a {
+      display: block;
+      margin: 5px 0;
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Content Layout */
+    .content {
+      margin-left: 280px; /* Space for the fixed header */
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .column {
+      width: 48%; /* Two columns */
+      position: relative;
+    }
+
+    .column-header {
+      position: sticky;
+      top: 50px; /* Fixed header in the column */
+      background-color: #fff;
+      padding: 10px;
+      font-family: 'Lato', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .column-content {
+      padding: 20px;
+    }
+
+    /* Footer Styling */
+    footer {
+      position: fixed;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+
+    /* Mobile Responsiveness */
+    @media screen and (max-width: 960px) {
+      .content {
+        flex-direction: column;
+        margin-left: 0;
+      }
+
+      .column {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 </head>
 
 
@@ -63,68 +167,26 @@
         </p>
       </header>
 
-      <section>
-        <h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a></h3>
+  <!-- Content Section -->
+  <div class="content">
+    <div class="column">
+      <div class="column-header">Header 1</div>
+      <div class="column-content">
+        <p>Your content for the first column goes here.</p>
+      </div>
+    </div>
 
-        <p></p>
-
-        <div align="left">
-          <h3 style="margin-top: 80px;"> </h3>
-        </div>
-        <p>
-          Welcome! My name is Benedikte Grundtvig Huber, and I am a Master’s student in Political Science at the University of Copenhagen. 
-           <p></p>
-          I submitted my master's thesis in the summer of 2024, and I am now spending the last part of my studies as a visiting researcher at <a href="https://icea.spia.princeton.edu/people/benedikte-grundtvig-huber">Princeton University</a> in order to broaden my academic horizon. 
-           <p></p>
-          My research interests lie broadly in Comparative Politics. I am mainly interested in regime development, authoritarianism, and the safeguards of democracies. 
-           <p></p>
-          While studying, I taught Comparative Politics and worked as a research assistant at multiple Universities. 
-         
-           <p></p>
-          In my spare time, I enjoy reading magical realism, going to concerts, and cooking. I was born in Germany, and hold passports from Denmark and Austria. 
-        </p>
-
-        <div align="left">
-          <h3 style="margin-top: 80px;">Projects</h3>
-        </div>
-        <p>
-          <ol start="1">
-            <li>
-              <b> A tale of two aids </b>
-              (with Maria Lok), <i> Master Thesis of the Year 2024, Department of Political Science, University of Copenhagen </i>.
-              <a href="Thesis.pdf"><b> [Full Thesis]</b></a><br>
-              &nbsp;
-            </li>
-            <li>
-              <b> A Billion Telegram Posts about the 2024 U.S. Presidential Election </b>
-              <i> As a side project, I am currently exploring the Blas et al (2024) dataset </i>.
-              <a href="Thesis.pdf"><b> [Prelimiary findings]</b></a><br>
-              &nbsp;
-            </li>
-          </ol>
-        </p>
-
-        <div align="left">
-          <h3 style="margin-top: 80px;">Podcast</h3>
-        </div>
-        <p>
-          As a TA for Professor Jacob Harir's course Comparative Politics III - 3rd year BSc course at the University of Copenhagen - I have been a guest on Marc Sabatier Hvidkjærs Podcast which worked as a compendium to the course in Comparative Politics. I appear on the following episodes:
-          <ol start="1">
-            <li>
-              <a href="https://podcasts.apple.com/dk/podcast/%C3%B8konomisk-udvikling-demokrati/id1644873072?i=1000579321369"><b> Economic Development and Democracy</b></a><br>
-              &nbsp;
-            </li>
-            <li>
-              <a href="https://podcasts.apple.com/dk/podcast/stater-imperier/id1644873072?i=1000579371705"><b>States and Empires</b></a><br>
-              &nbsp;
-            </li>
-          </ol>
-        </p>
-
-      </section>
+    <div class="column">
+      <div class="column-header">Header 2</div>
+      <div class="column-content">
+        <p>Your content for the second column goes here.</p>
+      </div>
+    </div>
+  </div>
+     
 
       <footer>
-        <p><small>   This website is based on the Github <a href= "https://github.com/orderedlist/minimal">minimal theme</small></p>
+    <p>&copy; 2024 Benedikte Grundtvig Huber</p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
