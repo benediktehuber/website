@@ -100,14 +100,20 @@
     .column-header {
       position: sticky;
       top: 50px; /* Fixed header in the column */
-      background-color: #fff;
       padding: 10px;
       font-family: 'Lato', sans-serif;
       font-size: 20px;
       font-weight: bold;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
-
+.column-sub-header {
+   position: sticky;
+      top: 50px; /* Fixed header in the column */
+      padding: 10px;
+      font-family: 'Lato', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+    }
+     
     .column-content {
       padding: 20px;
     }
@@ -177,13 +183,15 @@
       </div>
     </div>
 
-    <div class="column">
-      <div class="column-header">Header 2</div>
-      <div class="column-content">
-        <p>Your content for the second column goes here.</p>
-      </div>
-    </div>
+   <div class="column">
+  <div class="column-header">Header 2</div>
+  <div class="column-content">
+    <!-- Additional header within column content -->
+    <div class="column-sub-header">Subheader 1</div>
+    <p>Your content for the second column goes here.</p>
   </div>
+</div>
+
      
 
       <footer>
