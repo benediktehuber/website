@@ -36,19 +36,28 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
 }
 
+
+
 h1 {
-  font-size: 28px;
+  font-size: 24px;
   color: #222;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 16px;
   color: #393939;
 }
 
 h3, h4, h5, h6 {
   color: #494949;
 }
+
+.column .smaller-heading {
+    font-size: 0.9em; /* Adjust the size as needed */
+    line-height: 1.2; /* Optional: Adjust line height for better spacing */
+}
+
+
 
 /* Paragraph and list styling */
 p, ul, ol, dl {
