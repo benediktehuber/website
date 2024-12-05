@@ -106,7 +106,9 @@ font-family: 'Lato', sans-serif;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-    }
+     align-items: flex-start;
+    gap: 20px; /* Add uniform spacing between columns */
+}
 
     .column {
       width: 45%; /* Adjust column width */
@@ -146,6 +148,13 @@ font-family: 'Lato', sans-serif;
     .column-content a:hover {
       text-decoration: underline;
     }
+
+     .column-content p, 
+.column-content ul, 
+.column-content div {
+    margin: 0;
+    padding: 0;
+}
 .row {
   display: flex;
   justify-content: space-between;
@@ -153,6 +162,10 @@ font-family: 'Lato', sans-serif;
      .side-by-side {
   width: 48%; /* Ensure both columns fit side by side */
 }
+     .column-header + .column-content {
+    margin-top: 20px; /* Adjust spacing consistently */
+}
+
 
     /* Footer Styling */
     footer {
