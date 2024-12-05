@@ -134,6 +134,13 @@
     .column-content a:hover {
       text-decoration: underline;
     }
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+     .side-by-side {
+  width: 48%; /* Ensure both columns fit side by side */
+}
 
     /* Footer Styling */
     footer {
@@ -156,7 +163,10 @@
         width: 100%; /* Full width on mobile */
         margin-bottom: 20px;
       }
-
+.side-by-side {
+    width: 100%;
+    margin-bottom: 20px;
+  }
       header {
         width: 100%;
         position: relative;
@@ -190,19 +200,15 @@
         <a href="cv/cv_a_la_marc__til_github_.pdf"><b>Curriculum Vitae</b></a><br>
       </p>
     </header>
+<div class="content">
+  <div class="column">
+    <div class="column-header">Welcome</div>
+    <div class="column-content">
+      <p>Welcome to my website! I am Benedikte Grundtvig Huber, a graduate student in Comparative Politics at the University of Copenhagen.</p>
+    </div>
 
-    <div class="content">
-      <div class="column">
-        <div class="column-header">Welcome</div>
-        <div class="column-content">
-          <p>Hello</p>
-           
-          
-        </div>
-      </div>
-
-        <div class="content">
-      <div class="column">
+    <div class="row">
+      <div class="side-by-side">
         <div class="column-header">Podcast</div>
         <div class="column-content">
           <p>
@@ -215,7 +221,7 @@
         </div>
       </div>
 
-      <div class="column">
+      <div class="side-by-side">
         <div class="column-header">Articles</div>
         <div class="column-content">
           <ol start="1">
@@ -231,69 +237,15 @@
         </div>
       </div>
     </div>
-      
+  </div>
 
-      <div class="column">
-        <div class="column-header">CV</div>
-        <div class="column-content">
-            <h2>Education</h2>
-          <ul>
-            <li><strong>Master’s Degree</strong>, <em>Political Science</em>, University of Copenhagen <span class="date">December 2024</span></li>
-            <li><strong>Semester Abroad</strong>, <em>Erasmus Exchange</em>, Freie Universität Berlin & Humboldt Universität <span class="date">2023</span></li>
-            <li><strong>Bachelor’s Degree</strong>, <em>Political Science</em>, University of Copenhagen <span class="date">2021</span></li>
-          </ul>
-          <h2>Academic Experience</h2>
-          <ul>
-            <li><strong>Visiting Student Research Collaborator</strong>, Princeton University <span class="date">2024</span>
-              <ul>
-                <li>Visit to the Mamdouha S. Bobst Center for Peace and Justice.</li>
-              </ul>
-            </li>
-          </ul>
-          <h2>Professional Experience</h2>
-          <ul>
-            <li><strong>Research Assistant</strong>, Princeton University <span class="date">2023–</span>
-              <ul>
-                <li>Annotated Danish & Austrian parliamentary speeches remotely to train machine learning models under Rafaela M. Dancygier & Vincent Heddesheimer.</li>
-              </ul>
-            </li>
-            <li><strong>Research Assistant</strong>, Yale University, Identity & Conflict Lab <span class="date">2024</span>
-              <ul>
-                <li>Translated surveys remotely from English to Danish for Nicholas Sambanis & Krzysztof Krakowski.</li>
-              </ul>
-            </li>
-            <li><strong>Research Assistant for Asmus Leth Olsen</strong>, University of Copenhagen <span class="date">2022–2024</span>
-              <ul>
-                <li>Assisted in various research projects related to Public Administration, including data collection & visualization, proofreading, & dissemination.</li>
-              </ul>
-            </li>
-            <li><strong>Instructor in Danish & Comparative Politics III</strong>, University of Copenhagen <span class="date">2021–2024</span>
-              <ul>
-                <li>Planned & taught seminars for bachelor’s students in Comparative Politics during their 5th semester.</li>
-                <li>Achieved an average evaluation score of 4.7/5.</li>
-              </ul>
-            </li>
-            <li><strong>Research Assistant for Jacob Gerner Hariri</strong>, University of Copenhagen <span class="date">2022–2023</span>
-              <ul>
-                <li>Assisted in a major historical research project in comparative politics. Collected & analyzed various forms of data, including historical documents & academic articles.</li>
-              </ul>
-            </li>
-            <li><strong>Substitute Teacher with Permanent Roles</strong>, Sankt Petri School <span class="date">2017–2021</span>
-              <ul>
-                <li>Taught Social Studies & History for grades 6, 8, & 9.</li>
-              </ul>
-            </li>
-          </ul>
-          <h2>Skills</h2>
-          <ul>
-            <li><strong>Languages:</strong> Danish (native), German (native), English (fluent), French (moderate).</li>
-            <li><strong>Software:</strong> R, STATA, LaTeX, Python, Microsoft Office Suite.</li>
-          </ul>
-          
-        </div>
-      </div>
+  <div class="column">
+    <div class="column-header">CV</div>
+    <div class="column-content">
+      <!-- You can place the CV content here, like a downloadable link or brief summary -->
     </div>
-
+  </div>
+</div>
   
      
 
