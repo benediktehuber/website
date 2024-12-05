@@ -96,23 +96,27 @@
       position: relative;
     }
 
-    .column-header {
-      position: sticky;
-      top: 50px; /* Fixed header in the column */
-      padding: 10px;
-      font-family: 'Lato', sans-serif;
-      font-weight: 300; /* Thin Lato font */
-      font-size: 20px;
-    }
-.column-sub-header {
+   .column-header {
   position: sticky;
-  top: 50px; /* This keeps the subheader fixed at the top */
-  padding: 0; /* Remove any padding */
+  top: 50px;
+  padding: 10px;
   font-family: 'Lato', sans-serif;
   font-weight: 300; /* Thin Lato font */
   font-size: 20px;
-  text-indent: 0; /* Ensure no text indent */
-  margin-top: 0; /* Remove any extra margin */
+  font-weight: bold;
+  margin: 0; /* Remove any extra margin */
+}
+.column-sub-header {
+  position: sticky;
+  top: 50px;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; /* Thin Lato font */
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0; /* Ensure no extra margin is applied */
+  padding-left: 0; /* Remove left padding */
+  text-indent: 0; /* Remove any indent */
 }
     .column-content {
       padding: 20px;
