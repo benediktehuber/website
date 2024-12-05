@@ -144,7 +144,12 @@
   text-decoration: none;
   color: #333;
 }
-
+.columns-container {
+  display: flex; /* Make the columns use flexbox */
+  justify-content: space-between; /* Distribute columns evenly */
+  gap: 20px; /* Optional: adds space between the columns */
+  flex-wrap: wrap; /* Ensure the columns wrap on smaller screens */
+}
 .column-content a:hover {
   text-decoration: underline;
 }
@@ -210,20 +215,16 @@
   <!-- Content Section -->
 <div class="columns-container">
   <div class="column">
-    <div class="column-header">WElcome</div> <!-- Header 1 for Podcast -->
+    <div class="column-header">Welcome</div>
     <div class="column-content">
-      <p>
-       Hello
-      </p>
+      <p>Hello</p>
     </div>
   </div>
 
   <div class="column">
-    <div class="column-header">CV</div> <!-- Header 2 for Articles -->
+    <div class="column-header">CV</div>
     <div class="column-content">
-      <p>
-      yes
-      </p>
+      <p>Yes</p>
     </div>
   </div>
 </div>
