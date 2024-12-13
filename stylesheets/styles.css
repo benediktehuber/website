@@ -32,6 +32,7 @@ a:visited, a:active, a:hover {
 
 .header .logo {
     font-size: 1.5rem;
+    color: white !important; /* Make sure logo color is white */
 }
 
 .navbar a {
