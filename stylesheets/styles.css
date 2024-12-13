@@ -30,17 +30,40 @@ a {
     font-size: 1.5rem;
 }
 
-/* Navbar links */
-.navbar a {
-    margin-left: 20px;
-    color: white !important; /* Force white color */
-    font-weight: 600;
-    text-decoration: none; /* Prevent underline */
+a {
+    text-decoration: none;
+    color: inherit; /* Ensure the color is inherited from parent */
 }
 
-header a {
-  color: white !important;
-  text-decoration: none;
+a:visited, a:active, a:hover {
+    color: inherit !important; /* Force color to inherit and prevent blue */
+}
+
+/* Header */
+header a, .navbar a {
+    color: white !important; /* Ensure all header links are white */
+}
+
+header a:visited, header a:active, header a:hover {
+    color: white !important; /* Prevent blue color for header links */
+}
+
+/* Sidebar */
+.sidebar a {
+    color: black !important; /* Ensure all sidebar links are black */
+}
+
+.sidebar a:visited, .sidebar a:active, .sidebar a:hover {
+    color: black !important; /* Prevent blue color for sidebar links */
+}
+
+/* Content Links */
+.content a {
+    color: black !important; /* Ensure all column links are black */
+}
+
+.content a:visited, .content a:active, .content a:hover {
+    color: black !important; /* Prevent blue color for content links */
 }
 
 header a:hover,
