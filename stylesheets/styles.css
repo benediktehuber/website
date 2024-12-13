@@ -38,20 +38,22 @@ a {
     text-decoration: none; /* Prevent underline */
 }
 
-/* Ensuring all header links are white */
 header a {
     color: white !important;
     text-decoration: none;
 }
-
-header a:link, header a:visited, header a:hover, header a:active {
+header a:hover {
     color: white !important;
-    text-decoration: none;
+}
+header a:visited {
+    color: white !important;
+}
+header a:active {
+    color: white !important;
 }
 
-/* Hover effect for navbar links */
-.navbar a:hover {
-    color: #ff6f61 !important; /* Customize the hover color */
+.navbar a {
+    color: white !important;
 }
 
 
