@@ -2,7 +2,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name="description" content="Personal website of Benedikte Grundtvig Huber">
   <meta name="keywords" content="Benedikte, personal, portfolio, web design">
@@ -14,7 +13,6 @@
 
   <!-- Font Awesome for Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/9745af1226.js" crossorigin="anonymous"></script>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="styles.css">
@@ -24,17 +22,11 @@
     function toggle_visibility(id) {
       event.preventDefault();
       var e = document.getElementById(id);
-      if (e.style.display == 'none') {
-        e.style.display = 'block';
-      } else {
-        e.style.display = 'none';
-      }
+      e.style.display = (e.style.display == 'none') ? 'block' : 'none';
     }
   </script>
 
   <style>
-    /* Internal CSS Styling */
-
     /* Global Styling */
     body {
       font-family: 'EB Garamond', serif;
@@ -45,19 +37,19 @@
       padding: 0;
     }
 
-    h1 {
-      font-size: 36px;
+    h1, h2 {
       font-family: 'Lato', sans-serif;
-      text-align: center;
       font-weight: 300;
       margin: 40px 0 10px;
     }
 
+    h1 {
+      font-size: 36px;
+      text-align: center;
+    }
+
     h2 {
       font-size: 18px;
-      font-family: 'Lato', sans-serif;
-      font-weight: 300;
-      margin: 40px 0 10px;
       text-align: right;
     }
 
@@ -70,26 +62,23 @@
       height: 100%;
       padding: 20px;
       background-color: #901A1E;
+      color: white;
       text-align: center;
       z-index: 10;
-      color: white;
     }
 
-    /* Image Styling */
     header img {
       width: 200px;
       height: 200px;
       border-radius: 50%;
     }
 
-    /* Name Styling */
     header .name {
       font-size: 30px;
       font-weight: bold;
       margin-top: 15px;
     }
 
-    /* Social Links Styling */
     header .social-links {
       margin-top: 20px;
       text-align: center;
@@ -98,50 +87,31 @@
 
     header .social-links a {
       display: inline-block;
-      margin: 5px;
       text-decoration: none;
       color: white;
-    }
-
-    /* Links Styling (including hover and active states) */
-    header a:link,
-    header a:visited,
-    header a:hover,
-    header a:active {
-      color: white;
-      text-decoration: none;
     }
 
     /* Content Layout */
     .content {
       margin-left: 300px;
       padding-top: 100px;
-      padding-right: 20px;
-      padding-left: 20px;
+      padding: 20px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
       gap: 20px;
     }
 
     .column {
       width: 45%;
-      margin-bottom: 20px;
     }
 
-    /* Column Header Styling */
     .column-header {
-      position: sticky;
-      top: 0px;
       font-family: 'Lato', sans-serif;
       font-weight: 300;
       font-size: 20px;
       margin: 0;
       text-align: right;
     }
-
-
 
     .column-content {
       padding: 10px 0;
@@ -153,10 +123,6 @@
       padding: 0;
     }
 
-    .column-content ul li {
-      margin: 5px 0;
-    }
-
     .column-content a {
       text-decoration: none;
       color: #333;
@@ -166,14 +132,6 @@
       text-decoration: underline;
     }
 
-    .column-content p,
-    .column-content ul,
-    .column-content div {
-      margin: 0;
-      padding: 0;
-    }
-
-
     /* Footer Styling */
     footer {
       position: fixed;
@@ -182,28 +140,14 @@
       width: 100%;
       text-align: center;
       padding: 10px;
-      font-size: 12px; /* Reduced font size */
-  color: #777; /* Optional: Adjust color for a lighter tone */
+      font-size: 12px;
+      color: #777;
     }
 
-    
     /* Mobile Responsiveness */
     @media screen and (max-width: 960px) {
       .content {
         margin-left: 0;
-        padding-top: 100px;
-        padding-right: 10px;
-        padding-left: 10px;
-      }
-
-      .column {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-
-      .side-by-side {
-        width: 100%;
-        margin-bottom: 20px;
       }
 
       header {
@@ -221,117 +165,86 @@
       <h1>Benedikte Grundtvig Huber</h1>
       <img src="img/IMG_3022.JPG" alt="Your Picture" class="round-image">
       <p class="view">Master student<br><a href="https://polsci.ku.dk/">Institut for Statskundskab</a><br>University of Copenhagen<br><a href="mailto:didigru@gmail.com">didigru@gmail.com</a></p>
-      <div>
+      <div class="social-links">
         <a href="https://x.com/BenedikteHuber1" target="_blank">
-          <i class="fab fa-twitter" style="font-size: 24px; margin-right: 10px;"></i>
+          <i class="fab fa-twitter" style="font-size: 24px;"></i>
         </a>
         <a href="https://www.linkedin.com/in/benediktegrundtvighuber/" target="_blank">
-          <i class="fab fa-linkedin" style="font-size: 24px; margin-right: 10px;"></i>
+          <i class="fab fa-linkedin" style="font-size: 24px;"></i>
         </a>
         <a href="https://bsky.app/profile/benedikteghuber.bsky.social" target="_blank">
-          <i class="fas fa-user" style="font-size: 24px; margin-right: 10px;"></i>
+          <i class="fas fa-user" style="font-size: 24px;"></i>
         </a>
         <a href="https://github.com/benediktehuber" target="_blank">
-          <i class="fab fa-github" style="font-size: 24px; margin-right: 10px;"></i>
+          <i class="fab fa-github" style="font-size: 24px;"></i>
         </a>
       </div>
       <p><a href="cv/cv_a_la_marc__til_github_.pdf"><b>Curriculum Vitae</b></a></p>
     </header>
+
     <div class="content">
       <div class="column">
-        <div class="column-header welcome">Welcome</div>
+        <div class="column-header">Welcome</div>
         <div class="column-content">
           <p>Welcome to my website! I am Benedikte Grundtvig Huber, a graduate student in Comparative Politics at the University of Copenhagen.</p>
         </div>
 
-        <div class="row">
-          <div class="side-by-side">
-            <div class="column-header">Podcast</div>
-            <div class="column-content">
-              <p>As a TA for Professor Jacob Hariri's course Comparative Politics III - 3rd year BSc course at the University of Copenhagen - I have been a guest on Marc Sabatier Hvidkjærs Podcast, which worked as a compendium to the course in Comparative Politics. I appear on the following episodes:</p>
-              <ol start="1">
-                <li><a href="https://podcasts.apple.com/dk/podcast/%C3%B8konomisk-udvikling-demokrati/id1644873072?i=1000579321369"><b> Economic Development and Democracy</b></a></li>
-                <li><a href="https://podcasts.apple.com/dk/podcast/stater-imperier/id1644873072?i=1000579371705"><b>States and Empires</b></a></li>
-              </ol>
-            </div>
+        <div class="side-by-side">
+          <div class="column-header">Podcast</div>
+          <div class="column-content">
+            <p>As a TA for Professor Jacob Hariri's course Comparative Politics III at the University of Copenhagen, I have been a guest on Marc Sabatier Hvidkjær's podcast:</p>
+            <ol>
+              <li><a href="https://podcasts.apple.com/dk/podcast/%C3%B8konomisk-udvikling-demokrati/id1644873072?i=1000579321369"><b>Economic Development and Democracy</b></a></li>
+              <li><a href="https://podcasts.apple.com/dk/podcast/stater-imperier/id1644873072?i=1000579371705"><b>States and Empires</b></a></li>
+            </ol>
           </div>
-          
+        </div>
 
-      <div class="side-by-side">
-        <div class="column-header">Articles</div>
-        <div class="column-content">
-          <ol start="1">
-            <li>
-              <b> A tale of two aids </b> (with Maria Lok), <i> Master Thesis of the Year 2024, Department of Political Science, University of Copenhagen </i>.
-              <a href="Thesis.pdf"> [Full Thesis]</a>
-            </li>
-            <li>
-              <b> A Billion Telegram Posts about the 2024 U.S. Presidential Election </b> <i> As a side project, I am currently exploring <a href=https://arxiv.org/abs/2410.23638> The Blas et al (2024) dataset</a> </i>.
-             
-            </li>
-             <li>
-              <b> Is it the economy stupid? Understanding the rise of MAGA in Appalachia </b>  <i> Paper based on fieldwork conducted in Appalachia in 2024. 
-              [Preliminary findings will be posted here]</i>.
-            </li>
-          </ol>
+        <div class="side-by-side">
+          <div class="column-header">Articles</div>
+          <div class="column-content">
+            <ol>
+              <li>
+                <b>A Tale of Two Aids</b> (with Maria Lok), <i>Master Thesis of the Year 2024, Department of Political Science, University of Copenhagen</i>.
+                <a href="Thesis.pdf">[Full Thesis]</a>
+              </li>
+              <li>
+                <b>A Billion Telegram Posts about the 2024 U.S. Presidential Election</b> <i>Exploring <a href="https://arxiv.org/abs/2410.23638">The Blas et al (2024) dataset</a></i>.
+              </li>
+              <li>
+                <b>Is It the Economy, Stupid? Understanding the Rise of MAGA in Appalachia</b> <i>Paper based on fieldwork conducted in Appalachia in 2024. Preliminary findings will be posted here.</i>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="section">
+          <h2>Education and Academic Experience</h2>
+          <div class="education">
+            <p><strong>Master’s Degree</strong>, <em>Political Science</em>, University of Copenhagen <span class="date">December 2024</span></p>
+            <p><strong>Visiting Student Research Collaborator</strong>, <em>Political Science</em>, Princeton University <span class="date">2024</span></p>
+            <p><strong>Semester Abroad</strong>, <em>Erasmus Exchange</em>, Freie Universität Berlin & Humboldt Universität <span class="date">2023</span></p>
+            <p><strong>Bachelor’s Degree</strong>, <em>Political Science</em>, University of Copenhagen <span class="date">2021</span></p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Professional Experience</h2>
+          <div class="job">
+            <p><strong>Research Assistant</strong>, Princeton University <span class="date">2023--</span></p>
+          </div>
+          <div class="job">
+            <p><strong>Teaching Assistant</strong>, University of Copenhagen <span class="date">2022--2024</span></p>
+          </div>
         </div>
       </div>
     </div>
+
+    <footer>
+      <p>Created by Benedikte Grundtvig Huber | <a href="https://github.com/benediktehuber">GitHub</a> | <a href="https://bsky.app/profile/benedikteghuber.bsky.social">BlueSky</a></p>
+    </footer>
   </div>
-
-<div class="column">
-    <div class="column-header"> </div>
-    <div class="column-content">
-        <div class="section">
-            <h2>Education and Academic Experience</h2>
-            <div class="education">
-                <p><strong>Master’s Degree</strong>, <em>Political Science</em>, University of Copenhagen <span class="date">  December 2024</span></p>
-                <p><strong>Visiting Student Research Collaborator</strong>, <em>Political Science</em>, Princeton University <span class="date">  2024 </span></p>
-                <p><strong>Semester Abroad</strong>, <em>Erasmus Exchange</em>, Freie Universität Berlin & Humboldt Universität <span class="date">  2023</span></p>
-                <p><strong>Bachelor’s Degree</strong>, <em>Political Science</em>, University of Copenhagen <span class="date">  2021</span></p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Professional Experience</h2>
-            <div class="job">
-                <p><strong>Research Assistant</strong>, Princeton University <span class="date">  2023--</span></p>
-             
-            </div>
-            <div class="job">
-                <p><strong>Research Assistant</strong>, Yale University, Identity & Conflict Lab <span class="date">  2024</span></p>
-              
-            </div>
-            <div class="job">
-                <p><strong>Research Assistant for Asmus Leth Olsen</strong>, University of Copenhagen <span class="date">  2022--2024</span></p>
-             
-            </div>
-            <div class="job">
-                <p><strong>TA in Danish & Comparative Politics III</strong>, University of Copenhagen <span class="date">   2021-2024</span></p>
-              
-            </div>
-            <div class="job">
-                <p><strong>Research Assistant for Jacob Gerner Hariri</strong>, University of Copenhagen <span class="date">   2022-2023</span></p>
-    
-            </div>
-  
-        </div>
-
-        <div class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Languages:</strong> Danish (native), German (native), English (fluent), French (moderate).</li>
-                <li><strong>Software:</strong> R, STATA, LaTeX, Python, Microsoft Office Suite.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-
-      <footer>
-    <p>&copy; 2024 Benedikte Grundtvig Huber</p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-  </body>
+</body>
 </html>
