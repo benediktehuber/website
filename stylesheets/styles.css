@@ -162,8 +162,7 @@ header a:active {
 .side-by-side .column {
   width: 48%; /* Set the width of each column */
 }
- 
-#container .job {
+  .job {
    font-size: 12px !important;
 }
 
