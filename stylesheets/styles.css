@@ -160,8 +160,9 @@ header a:link, header a:visited, header a:hover, header a:active {
 .side-by-side .column {
   width: 48%; /* Set the width of each column */
 }
-  .job {
-      font-size: 14px; /* Smaller font size for job sections */
+ 
+.job {
+      font-size: 12px; /* Smaller font size for job sections */
     }
 
 /* If you need responsiveness, adjust for smaller screens */
