@@ -41,11 +41,10 @@ header a {
   text-decoration: none;
 }
 
-header a:hover,
-header a:focus {
-  color: white;
-  text-decoration: underline;
-}
+    header a:link, header a:visited, header a:hover, header a:active {
+      color: white;
+      text-decoration: none;
+    }
 
 .navbar a:hover {
     color: #ff6f61;
