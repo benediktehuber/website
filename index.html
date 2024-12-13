@@ -32,7 +32,7 @@
     }
   </script>
 
-   <style>
+  <style>
     /* Internal CSS Styling */
 
     /* Global Styling */
@@ -45,106 +45,105 @@
       padding: 0;
     }
 
-       h1 {
-        font-size: 36px; /* Adjust to match or be smaller than .column-header */
-font-family: 'Lato', sans-serif;
-       text-align: center; /* Align text to the right */
-        font-weight: 300; /* Optional: Adjust weight for a balanced appearance */
-  margin: 40px 0 10px; /* Increase top margin to 40px */
+    h1 {
+      font-size: 36px;
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+      font-weight: 300;
+      margin: 40px 0 10px;
     }
-   h2 {
-  font-size: 18px; /* Adjust to match or be smaller than .column-header */
-  font-family: 'Lato', sans-serif;
-  font-weight: 300; /* Match column-header font weight */
-       margin: 40px 0 10px; /* Increase top margin to 40px */
 
-  text-align: right; /* Optional: To align like other headers */
-}
+    h2 {
+      font-size: 18px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      margin: 40px 0 10px;
+      text-align: right;
+    }
 
+    /* Header Styling */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      padding: 20px;
+      background-color: #901A1E;
+      text-align: center;
+      z-index: 10;
+      color: white;
+    }
 
-  /* Header Styling */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 100%;
-  padding: 20px;
-  background-color: #901A1E;
-  text-align: center; /* Center the text content in the header */
-  z-index: 10; /* Ensure it stays on top */
-  color: white; /* Set the text color to white */
-}
+    /* Image Styling */
+    header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
 
-/* Image Styling */
-header img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
+    /* Name Styling */
+    header .name {
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
 
-/* Name Styling */
-header .name {
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 15px;
-}
+    /* Social Links Styling */
+    header .social-links {
+      margin-top: 20px;
+      text-align: center;
+      gap: 15px;
+    }
 
-/* Social Links Styling */
-header .social-links {
-  margin-top: 20px;
-  text-align: center;
-  gap: 15px;
-}
+    header .social-links a {
+      display: inline-block;
+      margin: 5px;
+      text-decoration: none;
+      color: white;
+    }
 
-header .social-links a {
-  display: inline-block;
-  margin: 5px;
-  text-decoration: none;
-  color: white; /* Ensure links are white */
-}
-
-/* Links Styling (including hover and active states) */
-header a:link,
-header a:visited,
-header a:hover,
-header a:active {
-  color: white; /* Ensure all links are white, no matter the state */
-  text-decoration: none; /* Remove underline from links */
-}
-
+    /* Links Styling (including hover and active states) */
+    header a:link,
+    header a:visited,
+    header a:hover,
+    header a:active {
+      color: white;
+      text-decoration: none;
+    }
 
     /* Content Layout */
     .content {
-      margin-left: 300px; /* Space for the fixed header */
-      padding-top: 100; /* Add top padding to prevent overlap */
+      margin-left: 300px;
+      padding-top: 100px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-     align-items: flex-start;
-    gap: 20px; /* Add uniform spacing between columns */
-}
+      align-items: flex-start;
+      gap: 20px;
+    }
 
     .column {
-      width: 45%; /* Adjust column width */
+      width: 45%;
       margin-bottom: 20px;
     }
 
- .column-header {
+    /* Column Header Styling */
+    .column-header {
       position: sticky;
       top: 50px;
-  padding: 5px 0;
+      padding: 5px 0;
       font-family: 'Lato', sans-serif;
       font-weight: 300;
       font-size: 20px;
       margin: 0;
-      text-align: right; /* Align headers to the left */
+      text-align: right;
     }
 
-  .column-content {
-  padding: 10px 0; /* Minimal padding */
-  margin-top: 0; /* Align closer to the header */
-}
+    .column-content {
+      padding: 10px 0;
+      margin-top: 0;
+    }
 
     .column-content ul {
       list-style-type: none;
@@ -164,37 +163,17 @@ header a:active {
       text-decoration: underline;
     }
 
-     .column-content p, 
-.column-content ul, 
-.column-content div {
-    margin: 0;
-    padding: 0;
-}
+    .column-content p,
+    .column-content ul,
+    .column-content div {
+      margin: 0;
+      padding: 0;
+    }
 
-      /* Specific Styling for Welcome header */
-  .column-header.welcome {
-    margin-bottom: 40px; /* Add more space under Welcome */
-  }
-
-  /* Specific Styling for Podcast header */
-  .column-header.podcast {
-    margin-bottom: 10px; /* Add less space under Podcast */
-  }
-
-
-     
-.row {
-     margin-bottom: 20px; /* General spacing for rows */
-display: flex;
-  justify-content: space-between;
-}
-     .side-by-side {
-  width: 48%; /* Ensure both columns fit side by side */
-}
-     .column-header + .column-content {
-    margin-top: 20px; /* Adjust spacing consistently */
-}
-
+    /* Specific Styling for Welcome header */
+    .column-header.welcome {
+      margin-bottom: 40px; /* Increase space below the 'Welcome' header */
+    }
 
     /* Footer Styling */
     footer {
@@ -210,17 +189,19 @@ display: flex;
     @media screen and (max-width: 960px) {
       .content {
         margin-left: 0;
-        padding-top: 100px; /* Adjust top padding for mobile */
+        padding-top: 100px;
       }
 
       .column {
-        width: 100%; /* Full width on mobile */
+        width: 100%;
         margin-bottom: 20px;
       }
-.side-by-side {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+
+      .side-by-side {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
       header {
         width: 100%;
         position: relative;
@@ -233,9 +214,9 @@ display: flex;
 <body>
   <div class="wrapper">
     <header>
-      <h1> Benedikte Grundtvig Huber</h1>
+      <h1>Benedikte Grundtvig Huber</h1>
       <img src="img/IMG_3022.JPG" alt="Your Picture" class="round-image">
-      <p class="view"> Master student <br><a href="https://polsci.ku.dk/">Institut for Statskundskab</a><br> University of Copenhagen <br><a href="mailto:didigru@gmail.com">didigru@gmail.com</a></p>
+      <p class="view">Master student<br><a href="https://polsci.ku.dk/">Institut for Statskundskab</a><br>University of Copenhagen<br><a href="mailto:didigru@gmail.com">didigru@gmail.com</a></p>
       <div>
         <a href="https://x.com/BenedikteHuber1" target="_blank">
           <i class="fab fa-twitter" style="font-size: 24px; margin-right: 10px;"></i>
@@ -250,30 +231,27 @@ display: flex;
           <i class="fab fa-github" style="font-size: 24px; margin-right: 10px;"></i>
         </a>
       </div>
-      <p>
-        <a href="cv/cv_a_la_marc__til_github_.pdf"><b>Curriculum Vitae</b></a><br>
-      </p>
+      <p><a href="cv/cv_a_la_marc__til_github_.pdf"><b>Curriculum Vitae</b></a></p>
     </header>
-<div class="content">
-  <div class="column">
-    <div class="column-header">Welcome</div>
-    <div class="column-content">
-      <p>Welcome to my website! I am Benedikte Grundtvig Huber, a graduate student in Comparative Politics at the University of Copenhagen.</p>
-    </div>
-
-    <div class="row">
-      <div class="side-by-side">
-        <div class="column-header">Podcast</div>
+    <div class="content">
+      <div class="column">
+        <div class="column-header welcome">Welcome</div>
         <div class="column-content">
-          <p>
-            As a TA for Professor Jacob Hariri's course Comparative Politics III - 3rd year BSc course at the University of Copenhagen - I have been a guest on Marc Sabatier Hvidkjærs Podcast, which worked as a compendium to the course in Comparative Politics. I appear on the following episodes:
-            <ol start="1">
-              <li><a href="https://podcasts.apple.com/dk/podcast/%C3%B8konomisk-udvikling-demokrati/id1644873072?i=1000579321369"><b> Economic Development and Democracy</b></a></li>
-              <li><a href="https://podcasts.apple.com/dk/podcast/stater-imperier/id1644873072?i=1000579371705"><b>States and Empires</b></a></li>
-            </ol>
-          </p>
+          <p>Welcome to my website! I am Benedikte Grundtvig Huber, a graduate student in Comparative Politics at the University of Copenhagen.</p>
         </div>
-      </div>
+
+        <div class="row">
+          <div class="side-by-side">
+            <div class="column-header">Podcast</div>
+            <div class="column-content">
+              <p>As a TA for Professor Jacob Hariri's course Comparative Politics III - 3rd year BSc course at the University of Copenhagen - I have been a guest on Marc Sabatier Hvidkjærs Podcast, which worked as a compendium to the course in Comparative Politics. I appear on the following episodes:</p>
+              <ol start="1">
+                <li><a href="https://podcasts.apple.com/dk/podcast/%C3%B8konomisk-udvikling-demokrati/id1644873072?i=1000579321369"><b> Economic Development and Democracy</b></a></li>
+                <li><a href="https://podcasts.apple.com/dk/podcast/stater-imperier/id1644873072?i=1000579371705"><b>States and Empires</b></a></li>
+              </ol>
+            </div>
+          </div>
+          
 
       <div class="side-by-side">
         <div class="column-header">Articles</div>
