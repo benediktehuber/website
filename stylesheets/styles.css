@@ -30,27 +30,30 @@ a {
     font-size: 1.5rem;
 }
 
+/* Navbar links */
 .navbar a {
     margin-left: 20px;
-    color: white;
+    color: white !important; /* Force white color */
     font-weight: 600;
+    text-decoration: none; /* Prevent underline */
 }
 
 /* Ensuring all header links are white */
 header a {
-    color: white;
+    color: white !important;
     text-decoration: none;
 }
 
 header a:link, header a:visited, header a:hover, header a:active {
-    color: white;
+    color: white !important;
     text-decoration: none;
 }
 
 /* Hover effect for navbar links */
 .navbar a:hover {
-    color: #ff6f61;
+    color: #ff6f61 !important; /* Customize the hover color */
 }
+
 
 /* Wrapper and Sidebar */
 .wrapper {
