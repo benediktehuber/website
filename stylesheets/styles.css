@@ -36,6 +36,17 @@ a {
     font-weight: 600;
 }
 
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover,
+header a:focus {
+  color: white;
+  text-decoration: underline;
+}
+
 .navbar a:hover {
     color: #ff6f61;
 }
