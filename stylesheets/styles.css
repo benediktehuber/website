@@ -162,9 +162,7 @@ header a:active {
 .side-by-side .column {
   width: 48%; /* Set the width of each column */
 }
-  .job {
-   font-size: 12px !important;
-}
+  
 
 /* If you need responsiveness, adjust for smaller screens */
 @media screen and (max-width: 960px) {
