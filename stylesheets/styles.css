@@ -163,9 +163,9 @@ header a:active {
   width: 48%; /* Set the width of each column */
 }
  
-.job {
-      font-size: 12px; /* Smaller font size for job sections */
-    }
+#container .job {
+   font-size: 12px !important;
+}
 
 /* If you need responsiveness, adjust for smaller screens */
 @media screen and (max-width: 960px) {
