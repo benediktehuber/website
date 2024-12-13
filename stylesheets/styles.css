@@ -1,13 +1,13 @@
 /* Global Styles */
 body {
-    font-family: 'Lato', sans-serif;  /* Set the base font */
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 h1, h2, h3 {
-    font-family: 'EB Garamond', serif;  /* Set heading font */
+    font-family: 'EB Garamond', serif;
 }
 
 a {
@@ -36,16 +36,18 @@ a {
     font-weight: 600;
 }
 
+/* Ensuring all header links are white */
 header a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
-    header a:link, header a:visited, header a:hover, header a:active {
-      color: white;
-      text-decoration: none;
-    }
+header a:link, header a:visited, header a:hover, header a:active {
+    color: white;
+    text-decoration: none;
+}
 
+/* Hover effect for navbar links */
 .navbar a:hover {
     color: #ff6f61;
 }
@@ -53,7 +55,7 @@ header a {
 /* Wrapper and Sidebar */
 .wrapper {
     display: flex;
-    margin-top: 80px; /* Adjusted for fixed header */
+    margin-top: 80px;
 }
 
 .sidebar {
@@ -89,7 +91,7 @@ header a {
     display: flex;
     flex: 1;
     padding: 20px;
-    margin-left: 320px; /* Offset for sidebar */
+    margin-left: 320px;
 }
 
 .column {
@@ -128,7 +130,7 @@ header a {
 
     .wrapper {
         flex-direction: column;
-        margin-top: 60px; /* Adjust for smaller screen */
+        margin-top: 60px;
     }
 
     .sidebar {
