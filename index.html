@@ -62,54 +62,55 @@ font-family: 'Lato', sans-serif;
 }
 
 
-    /* Header Styling */
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 250px;
-      height: 100%;
-      padding: 20px;
-      background-color: #901A1E;
-      text-align: center; /* Center the text content in the header */
-      z-index: 10; /* Ensure it stays on top */
-        color: white; /* Set the text color to white */
-
-    }
-
-    header img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-    }
-
-    header .name {
-      font-size: 30px;
-      font-weight: bold;
-      margin-top: 15px;
-    }
-
-    header .social-links {
-      margin-top: 20px;
-      text-align: center;
-        color: white; /* Make the links white */
-      gap: 15px;
-    }
-
-    header .social-links a {
-      display: inline-block;
-      margin: 5px;
-      text-decoration: none;
-      color: white;
-    }
-
-     header a:hover {
-  color: white; /* Change color to a lighter shade on hover */
+  /* Header Styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  padding: 20px;
+  background-color: #901A1E;
+  text-align: center; /* Center the text content in the header */
+  z-index: 10; /* Ensure it stays on top */
+  color: white; /* Set the text color to white */
 }
 
-/* Optional: Style links when active (clicked) */
+/* Image Styling */
+header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* Name Styling */
+header .name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Social Links Styling */
+header .social-links {
+  margin-top: 20px;
+  text-align: center;
+  gap: 15px;
+}
+
+header .social-links a {
+  display: inline-block;
+  margin: 5px;
+  text-decoration: none;
+  color: white; /* Ensure links are white */
+}
+
+/* Links Styling (including hover and active states) */
+header a:link,
+header a:visited,
+header a:hover,
 header a:active {
-  color:white; /* Make the color lighter when the link is clicked */
+  color: white; /* Ensure all links are white, no matter the state */
+  text-decoration: none; /* Remove underline from links */
 }
 
 
