@@ -12,7 +12,11 @@ h1, h2, h3 {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: inherit; /* Ensure color inheritance */
+}
+
+a:visited, a:active, a:hover {
+    color: inherit !important; /* Prevent links from turning blue */
 }
 
 /* Header */
@@ -30,59 +34,11 @@ a {
     font-size: 1.5rem;
 }
 
-a {
-    text-decoration: none;
-    color: inherit; /* Ensure the color is inherited from parent */
-}
-
-a:visited, a:active, a:hover {
-    color: inherit !important; /* Force color to inherit and prevent blue */
-}
-
-/* Header */
-header a, .navbar a {
-    color: white !important; /* Ensure all header links are white */
-}
-
-header a:visited, header a:active, header a:hover {
-    color: white !important; /* Prevent blue color for header links */
+.navbar a {
+    color: white !important; /* Ensure navbar links are white */
 }
 
 /* Sidebar */
-.sidebar a {
-    color: black !important; /* Ensure all sidebar links are black */
-}
-
-.sidebar a:visited, .sidebar a:active, .sidebar a:hover {
-    color: black !important; /* Prevent blue color for sidebar links */
-}
-
-/* Content Links */
-.content a {
-    color: black !important; /* Ensure all column links are black */
-}
-
-.content a:visited, .content a:active, .content a:hover {
-    color: black !important; /* Prevent blue color for content links */
-}
-
-header a:hover,
-header a:visited,
-header a:active {
-  color: white !important;
-}
-
-.navbar a {
-    color: white !important;
-}
-
-
-/* Wrapper and Sidebar */
-.wrapper {
-    display: flex;
-    margin-top: 80px;
-}
-
 .sidebar {
     background-color: #f4f4f4;
     width: 300px;
@@ -105,27 +61,25 @@ header a:active {
 .sidebar ul li a {
     display: flex;
     align-items: center;
+    color: black !important; /* Ensure sidebar links are black */
 }
 
-.sidebar ul li i {
-    margin-right: 10px;
-}
-
-/* Content and Columns */
+/* Content */
 .content {
     display: flex;
     flex: 1;
     padding: 20px;
     margin-left: 320px;
 }
+
 .content a {
-  color: black !important; /* Ensure all column links are black */
+    color: black !important; /* Ensure content links are black */
 }
+
 .column {
     flex: 1;
     margin-right: 25px;
 }
-
 
 .column-header {
     position: sticky;
@@ -176,24 +130,24 @@ header a:active {
         width: 100%;
     }
 }
+
+/* Side-by-Side Layout */
 .side-by-side {
-  display: flex;
-  gap: 20px; /* space between columns */
-  justify-content: space-between;
+    display: flex;
+    gap: 20px; /* space between columns */
+    justify-content: space-between;
 }
 
 .side-by-side .column {
-  width: 48%; /* Set the width of each column */
+    width: 48%; /* Set the width of each column */
 }
-  
 
-/* If you need responsiveness, adjust for smaller screens */
 @media screen and (max-width: 960px) {
-  .side-by-side {
-    flex-direction: column; /* stack columns vertically on small screens */
-  }
+    .side-by-side {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
 
-  .side-by-side .column {
-    width: 100%; /* full width on mobile */
-  }
+    .side-by-side .column {
+        width: 100%; /* Full width on mobile */
+    }
 }
