@@ -39,17 +39,14 @@ a {
 }
 
 header a {
-    color: white !important;
-    text-decoration: none;
+  color: white !important;
+  text-decoration: none;
 }
-header a:hover {
-    color: white !important;
-}
-header a:visited {
-    color: white !important;
-}
+
+header a:hover,
+header a:visited,
 header a:active {
-    color: white !important;
+  color: white !important;
 }
 
 .navbar a {
@@ -98,7 +95,9 @@ header a:active {
     padding: 20px;
     margin-left: 320px;
 }
-
+.content a {
+  color: black !important; /* Ensure all column links are black */
+}
 .column {
     flex: 1;
     margin-right: 20px;
