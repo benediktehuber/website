@@ -18,24 +18,23 @@ body{
 
 .about-grid{
   display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 32px;
   align-items: start;
 }
 
-.about-photo{
-  justify-self: end;
+.about-photo img{
+  max-width: 220px;
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 720px){
   .about-grid{
     grid-template-columns: 1fr;
   }
-
-  .about-photo{
-    justify-self: start;
-  }
 }
+
 
 .wrap{
   max-width: var(--max);
