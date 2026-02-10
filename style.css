@@ -71,15 +71,7 @@ hr{
   border-top: 1px solid var(--rule);
   margin: 14px 0 18px 0;
 }
-.about-grid{
-  border: 1px solid red;
-}
-.about-text{
-  border: 1px solid blue;
-}
-.about-photo{
-  border: 1px solid green;
-}
+
 
 a{ color: var(--link); }
 a:hover{ text-decoration: none; }
